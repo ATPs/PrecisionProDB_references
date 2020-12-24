@@ -6,27 +6,31 @@ protein databases based on gnomAD 3.1([the Genome Aggregation Database (gnomAD) 
 
 - [PrecisionProDB_reference](#precisionprodb_reference)
 - [gnomAD3.1](#gnomad31)
-  - [summary of population common alleles based on gnomAD 3.1](#summary-of-population-common-alleles-based-on-gnomad-31)
+  - [Summary of population common alleles based on gnomAD 3.1](#summary-of-population-common-alleles-based-on-gnomad-31)
   - [Common alleles in different population](#common-alleles-in-different-population)
 - [GENCODE](#gencode)
   - [GENCODE_gnomAD_common.protein_all.fa.gz](#gencode_gnomad_commonprotein_allfagz)
   - [GENCODE_*POPULATION_ABREVIATION*.pergeno.aa_mutations.csv.gz](#gencode_population_abreviationpergenoaa_mutationscsvgz)
   - [GENCODE_gnomAD_all.protein_changed.fa.gz](#gencode_gnomad_allprotein_changedfagz)
+  - [Summary of GENCODE variation](#summary-of-gencode-variation)
 - [RefSeq](#refseq)
   - [RefSeq_gnomAD_common.protein_all.fa.gz](#refseq_gnomad_commonprotein_allfagz)
   - [RefSeq_*POPULATION_ABREVIATION*.pergeno.aa_mutations.csv.gz](#refseq_population_abreviationpergenoaa_mutationscsvgz)
   - [RefSeq_gnomAD_all.protein_changed.fa.gz](#refseq_gnomad_allprotein_changedfagz)
+  - [Summary of RefSeq variation](#summary-of-refseq-variation)
 - [Ensembl](#ensembl)
   - [Ensembl_gnomAD_common.protein_all.fa.gz](#ensembl_gnomad_commonprotein_allfagz)
   - [Ensembl_*POPULATION_ABREVIATION*.pergeno.aa_mutations.csv.gz](#ensembl_population_abreviationpergenoaa_mutationscsvgz)
   - [Ensembl_gnomAD_all.protein_changed.fa.gz](#ensembl_gnomad_allprotein_changedfagz)
+  - [Summary of Ensembl variation](#summary-of-ensembl-variation)
 - [UniProt](#uniprot)
   - [UniProt_gnomAD_common.protein_all.fa.gz](#uniprot_gnomad_commonprotein_allfagz)
   - [UniProt_gnomAD_all.protein_changed.fa.gz](#uniprot_gnomad_allprotein_changedfagz)
+  - [Summary of UniProt variation](#summary-of-uniprot-variation)
 
 # gnomAD3.1
 
-## summary of population common alleles based on gnomAD 3.1
+## Summary of population common alleles based on gnomAD 3.1
 
 Several population go
 | population               | abreviation | genomes | # `alt` > `ref` |
@@ -84,6 +88,30 @@ Proteins are the original names + '__' + populations. For example: `ENSP00000390
 
 If the population annotation is `ALLSHARE`, it means that altered protein exists in all ten populations.
 
+## Summary of GENCODE variation
+
+Total number of proteins: **101486**, total number of AA: **38549462**
+
+|         |   stopGain_Pr |   stopLoss_Pr |   frameChange_Pr |   variant_AA |   variant_Pr |   indel_pr |
+|:--------|--------------:|--------------:|-----------------:|-------------:|-------------:|-----------:|
+| adj     |            90 |            44 |              156 |        14768 |        10728 |        404 |
+| afr_adj |            78 |            51 |              131 |        15697 |        11402 |        480 |
+| ami_adj |           101 |            50 |              157 |        15441 |        10993 |        432 |
+| amr_adj |            95 |            52 |              141 |        14769 |        10705 |        442 |
+| asj_adj |            90 |            44 |              158 |        15181 |        10830 |        419 |
+| eas_adj |            94 |            41 |              154 |        16524 |        11570 |        500 |
+| fin_adj |            92 |            47 |              151 |        15291 |        10881 |        439 |
+| mid_adj |           103 |            44 |              166 |        15215 |        10800 |        425 |
+| nfe_adj |            94 |            48 |              154 |        15134 |        10747 |        429 |
+| sas_adj |            84 |            46 |              147 |        15172 |        10917 |        419 |
+
+- stopGain_Pr: count of proteins with stop-gain
+- stopLoss_Pr: count of proteins with stop-loss
+- frameChange_Pr: count of proteins with frame change
+- variant_AA: total AA substitutions
+- variant_Pr: count of proteins with AA substitutions
+- indel_pr: count of proteins with insertion or deletion of AAs
+
 # RefSeq
 RefSeq GCF_000001405.39
 
@@ -100,6 +128,25 @@ Amino acid change mutations for different populations.
 ## RefSeq_gnomAD_all.protein_changed.fa.gz
 Combine changed proteins from 10 populations and keep only unique ones. 
 
+
+## Summary of RefSeq variation
+
+Total number of proteins: **114963**, total number of AA: **76187452**
+
+|         |   stopGain_Pr |   stopLoss_Pr |   frameChange_Pr |   variant_AA |   variant_Pr |   indel_pr |
+|:--------|--------------:|--------------:|-----------------:|-------------:|-------------:|-----------:|
+| adj     |           104 |             0 |              174 |        28723 |        19298 |        632 |
+| afr_adj |            95 |             0 |              214 |        29885 |        20389 |        773 |
+| ami_adj |           134 |            15 |              224 |        29865 |        19645 |        697 |
+| amr_adj |           125 |            14 |              184 |        28724 |        19241 |        722 |
+| asj_adj |           117 |             0 |              176 |        29147 |        19083 |        681 |
+| eas_adj |           127 |             0 |              201 |        31791 |        20630 |        805 |
+| fin_adj |           113 |             0 |              186 |        29453 |        19233 |        692 |
+| mid_adj |           125 |             0 |              179 |        29496 |        19332 |        692 |
+| nfe_adj |           113 |             0 |              185 |        29291 |        19020 |        684 |
+| sas_adj |           112 |             0 |              165 |        29040 |        19428 |        659 |
+
+
 # Ensembl
 Ensembl Homo_sapiens.GRCh38.101
 
@@ -111,6 +158,24 @@ Amino acid change mutations for different populations.
 
 ## Ensembl_gnomAD_all.protein_changed.fa.gz
 Combine changed proteins from 10 populations and keep only unique ones. 
+
+
+## Summary of Ensembl variation
+
+Total number of proteins: **112012**, total number of AA: **42584212**
+
+|         |   stopGain_Pr |   stopLoss_Pr |   frameChange_Pr |   variant_AA |   variant_Pr |   indel_pr |
+|:--------|--------------:|--------------:|-----------------:|-------------:|-------------:|-----------:|
+| adj     |           102 |             1 |              147 |        15136 |        10750 |        401 |
+| afr_adj |            89 |             1 |              126 |        16096 |        11426 |        476 |
+| ami_adj |           112 |             4 |              151 |        15844 |        11013 |        429 |
+| amr_adj |           109 |             5 |              133 |        15131 |        10724 |        441 |
+| asj_adj |           103 |             0 |              144 |        15664 |        10851 |        415 |
+| eas_adj |           111 |             1 |              143 |        16953 |        11587 |        499 |
+| fin_adj |           102 |             1 |              140 |        15706 |        10898 |        436 |
+| mid_adj |           115 |             0 |              154 |        15692 |        10820 |        421 |
+| nfe_adj |           107 |             0 |              144 |        15558 |        10767 |        425 |
+| sas_adj |            98 |             0 |              137 |        15398 |        10940 |        417 |
 
 
 # UniProt
@@ -125,3 +190,11 @@ UniProt gene models with alleles from gnomAD 3.1 most common alleles from all in
 
 ## UniProt_gnomAD_all.protein_changed.fa.gz
 Combine changed proteins from 10 populations and keep only unique ones. 
+
+## Summary of UniProt variation
+The percentage of changed proteins will be similar to Ensembl, as UniProt information were mostly extracted from Ensembl gene models.
+
+UP000005640_9606: 20609 proteins, 11395683 AA.  
+UP000005640_9606_additional: 77157 proteins, 27708325 AA.  
+Total: 97766 proteins, 39104008 AA.
+
