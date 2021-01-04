@@ -1,13 +1,14 @@
 # PrecisionProDB_reference
-protein databases based on gnomAD 3.1([the Genome Aggregation Database (gnomAD) project](https://gnomad.broadinstitute.org/)) and [PrecisionProDB](https://github.com/ATPs/PrecisionProDB) for humans
 
-[PrecisionProDB](https://github.com/ATPs/PrecisionProDB) is a Python package for proteogenomics, which can generate a customized protein database for peptide search in mass spectrometry. 
+[PrecisionProDB](https://github.com/ATPs/PrecisionProDB is a Python package for proteogenomics, which can generate a customized protein database for peptide search in mass spectrometry.
+
+[The Genome Aggregation Database (gnomAD) project](https://gnomad.broadinstitute.org/), provides variant allele frequencies in different human opulations based on genomes and exomes of hundreds of thousands of individuals. The population-specific common allele information can be integrated into a protein database. We applied PrecisionProDB to alleles from different populations from the gnomAD (v3.1) data and provided the pre-calculated protein databases here. 
 
 
 - [PrecisionProDB_reference](#precisionprodb_reference)
 - [gnomAD3.1](#gnomad31)
   - [Summary of population common alleles based on gnomAD 3.1](#summary-of-population-common-alleles-based-on-gnomad-31)
-  - [Common alleles in different population](#common-alleles-in-different-population)
+  - [Common alleles in different populations](#common-alleles-in-different-population)
 - [GENCODE](#gencode)
   - [GENCODE_gnomAD_common.protein_all.fa.gz](#gencode_gnomad_commonprotein_allfagz)
   - [GENCODE_*POPULATION_ABREVIATION*.pergeno.aa_mutations.csv.gz](#gencode_population_abreviationpergenoaa_mutationscsvgz)
@@ -50,10 +51,10 @@ Several population go
 weblink: https://gnomad.broadinstitute.org/faq
 
 
-\# `alt` > `ref`: count of alleles that the alternative allele have a higher allele frequency (AF) greater than alleles in the reference genome.
+\# `alt` > `ref`: count of alleles that the alternative allele have a higher allele frequency (AF) than the allele in the reference genome.
 
-## Common alleles in different population
-Variants from gnomAD 3.1. Only include sites which is "PASS" in quality-control and allele frequency (AF) of `alt` is greater than `ref`.
+## Common alleles in different populations
+Variants from gnomAD 3.1. Only include sites which is "PASS" in quality-control and the allele frequency of `alt` is higher than `ref`.
 
 file names: POPULATION_ABREVIATION.csv.gz
 
