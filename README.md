@@ -1,6 +1,6 @@
 # PrecisionProDB_reference
 
-[PrecisionProDB](https://github.com/ATPs/PrecisionProDB is a Python package for proteogenomics, which can generate a customized protein database for peptide search in mass spectrometry.
+[PrecisionProDB](https://github.com/ATPs/PrecisionProDB) is a Python package for proteogenomics, which can generate a customized protein database for peptide search in mass spectrometry.
 
 [The Genome Aggregation Database (gnomAD) project](https://gnomad.broadinstitute.org/), provides variant allele frequencies in different human opulations based on genomes and exomes of hundreds of thousands of individuals. The population-specific common allele information can be integrated into a protein database. We applied PrecisionProDB to alleles from different populations from the gnomAD (v3.1) data and provided the pre-calculated protein databases here. 
 
@@ -8,7 +8,7 @@
 - [PrecisionProDB_reference](#precisionprodb_reference)
 - [gnomAD3.1](#gnomad31)
   - [Summary of population common alleles based on gnomAD 3.1](#summary-of-population-common-alleles-based-on-gnomad-31)
-  - [Common alleles in different populations](#common-alleles-in-different-population)
+  - [Common alleles in different populations](#common-alleles-in-different-populations)
 - [GENCODE](#gencode)
   - [GENCODE_gnomAD_common.protein_all.fa.gz](#gencode_gnomad_commonprotein_allfagz)
   - [GENCODE_*POPULATION_ABREVIATION*.pergeno.aa_mutations.csv.gz](#gencode_population_abreviationpergenoaa_mutationscsvgz)
