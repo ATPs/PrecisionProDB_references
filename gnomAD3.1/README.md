@@ -18,7 +18,7 @@ Several population go
 weblink: https://gnomad.broadinstitute.org/faq
 
 
-\# `alt` > `ref`: count of alleles that the alternative allele have a higher allele frequency (**AF**) greater than alleles in the reference genome.
+\# `alt` > `ref`: count of alleles that the alternative allele have a higher allele frequency (**AF**) than alleles in the reference genome.
 
 
 files are in csv format (with `\t` as separator), which looks like:
