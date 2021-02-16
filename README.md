@@ -33,7 +33,7 @@
 
 ## Summary of population common alleles based on gnomAD 3.1
 
-Several population go
+
 | population               | abreviation | genomes | # `alt` > `ref` |
 |-----------               |-------------|---------| --                 |
 | African/African American | adj_afr     | 20,744  | 2,334,582          |
