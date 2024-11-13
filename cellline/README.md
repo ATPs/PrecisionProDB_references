@@ -9,8 +9,6 @@ Gioia, Louis. (2017). Genomic variant data for the Jurkat cell line [Data set]. 
 
 https://zenodo.org/record/400615#.YWjoIGJBxBC
 
-# 293T cell genomic variant calls
-http://hek293genome.org/v2/data.php
 
 # Jurkat.CHM13.RefSeq.vcf.gz
 liftover by commandline like `CrossMap vcf hg38ToHs1.over.chain.gz Jurkat.vcf.gz chm13v2.0.fa Jurkat.CHM13.RefSeq.vcf`. 
