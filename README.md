@@ -4,7 +4,10 @@
 
 [The Genome Aggregation Database (gnomAD) project](https://gnomad.broadinstitute.org/) provides variant allele frequencies in different human opulations based on genomes and exomes of hundreds of thousands of individuals. The population-specific common allele information can be integrated into a protein database. We applied PrecisionProDB to alleles from different populations from the gnomAD (v3.1) data and provided the pre-calculated protein databases here. 
 
+## updates
+- 20241213 [Jurkat cell line variant file based on T2T CHM13](https://github.com/ATPs/PrecisionProDB_references/blob/main/cellline/Jurkat.CHM13.RefSeq.vcf.gz) was added!
 
+## Table of contents
 - [PrecisionProDB_reference](#precisionprodb_reference)
 - [gnomAD3.1](#gnomad31)
   - [Summary of population common alleles based on gnomAD 3.1](#summary-of-population-common-alleles-based-on-gnomad-31)
