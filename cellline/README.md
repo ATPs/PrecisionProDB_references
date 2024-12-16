@@ -23,3 +23,7 @@ log
 2024-11-13 12:49:12 [INFO]  Failed to map: 28255
 ```
 26,847 of the 28,255 failed sites were due to `Fail(REF==ALT)`, which means that the site were not a mutation based on the new reference genome.
+
+## Jurkat.CHM13.RefSeq.PrecisonProDB.vcf2mutation_1.tsv.gz
+
+can be used to test PrecisionProDB v2.
