@@ -43,3 +43,7 @@ below is the description in the paper supplement
 
 # HeLa.WGS.PASS.sorted.GT.vcf.gz
 HeLa Cell WGS variant call from a much larger sequencing data. SRR19870494 of NCBI PRJNA853352.
+
+# HeLa.T2T.CHM13.PASS.sorted.GT.vcf.gz
+HeLa Cell WGS variant call from a much larger sequencing data. SRR19870494 of NCBI PRJNA853352. Matched to T2T.chm13 genome directly and called from the T2T genome directly.
+
